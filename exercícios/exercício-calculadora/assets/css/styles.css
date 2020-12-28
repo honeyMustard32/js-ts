@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+/*@import google fonts open sans regular400 e bold700*/
+
+:root { /*Meio que define variáveis globais*/
+    --primary-color: rgb(17, 86, 102);
+    --primary-color-darker: rgb(9, 48, 56);
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--primary-color);/*Usando variáveis globais*/
+    font-family: 'Open sans', sans-serif;/*Puxando a fonte com o fallback*/
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.container { /*Editando a classe container do arquivo index.html*/
+    max-width: 400px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.calculator {
+    width: 400px,
+}
+
+.display {
+    font-size: 2em;
+    width: 100%;
+    text-align: right;
+}
+
+.btn {
+    width: 100%;
+    height: 50px;
+    font-size: 1em;
+    border: none;
+    background-color:#dfdfdf;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: gray;
+}
