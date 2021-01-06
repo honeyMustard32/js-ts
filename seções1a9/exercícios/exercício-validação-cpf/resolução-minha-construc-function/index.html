@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação de CPF</title>
+    <link rel="stylesheet" href="./assets/css/styles.css"></link>
+</head>
+<body>
+
+    <section class="container">
+        <h1>Validação de CPF</h1>
+        <p>
+          Um algoritmo que recebe um valor de CPF e retorna se é um CPF válido ou não.
+        </p>
+
+        <form action="" id="form">
+            <label for="cpf-input">Insira o CPF</label>
+            <input 
+                type="text" 
+                id="cpf-input" 
+                maxlength="11" 
+                pattern="[0-9]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            >
+
+            <button>Enviar!</button>
+        </form>
+
+    </section>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
